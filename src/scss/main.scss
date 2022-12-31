@@ -1,0 +1,15 @@
+// # BLOCKS
+@import './header.scss';
+@import './fonts.scss';
+
+body{
+    background-color: #000000;
+    color: #fff;
+    font-family: 'Proxima Nova Regular';
+    padding: 23.5px 41.5px 0 36.5px;
+    margin: 0;
+    .body-wrapper{
+        max-width: 1920px;
+        width: 100%;
+    }
+}
