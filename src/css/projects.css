@@ -1,0 +1,43 @@
+.projects {
+  padding-top: 143px;
+  padding-bottom: 132px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #fff;
+  overflow: hidden;
+}
+.projects header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 143px;
+}
+.projects header h1 {
+  width: 45%;
+  text-transform: uppercase;
+  font-size: 65px;
+  font-family: "Proxima Nova Bold";
+}
+.projects header p {
+  width: 45%;
+  padding-right: 61px;
+  box-sizing: border-box;
+}
+.projects .carousel {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.projects .carousel .slide {
+  display: flex;
+  flex-direction: column;
+  max-width: 706px;
+}
+.projects .carousel .slide h3 {
+  margin: 42px 0 21px 0;
+  font-family: "Proxima Nova Bold";
+  font-size: 30px;
+}
+.projects .carousel .slide p {
+  color: #7E7E7E;
+  font-size: 20px;
+}

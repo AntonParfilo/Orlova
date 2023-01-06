@@ -1,0 +1,46 @@
+.contact{
+    display: flex;
+    padding-top: 161px;
+    .contact__lc{
+        width: 50%;
+        h1{
+            text-transform: uppercase;
+            font-size: 65px;
+            font-family: 'Proxima Nova Bold';
+            margin-bottom: 209px;
+        }
+        h3{
+            font-size: 30px;
+            text-transform: uppercase;
+            font-family: 'Proxima Nova Semibold';
+            text-decoration: underline;
+        }
+        p{
+            font-size: 30px;
+            font-family: 'Proxima Nova Semibold';
+            margin-top: 15px;
+        }
+    }
+    .contact__rc{
+        width: 50%;
+        .header__text{
+            margin-bottom: 82px;
+        }
+        h3{
+            font-size: 40px;
+            margin: 13px 0 99px 0;
+        }
+        .social{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 41px;
+            img{
+                margin-right: 31px;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

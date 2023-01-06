@@ -1,6 +1,14 @@
 // # BLOCKS
 @import './header.scss';
 @import './fonts.scss';
+@import './slider.scss';
+@import './about.scss';
+@import './projects.scss';
+@import './feedback.scss';
+@import './range.scss';
+@import './contact.scss';
+@import './footer.scss';
+@import './animation.scss';
 
 body{
     background-color: #000000;
@@ -8,8 +16,95 @@ body{
     font-family: 'Proxima Nova Regular';
     padding: 23.5px 41.5px 0 36.5px;
     margin: 0;
-    .body-wrapper{
+    font-size: 24px;
+    padding-bottom: 100px;
+    overflow-x: hidden;
+    
+    .container{
         max-width: 1920px;
-        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    .container_text{
+        padding-left: 345px;  
+    }
+    .section{
+        height: 360px;
+        border-top: 1px #fff solid;
+        border-bottom: 1px #fff solid;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        h1{
+            width: 50%;
+            text-transform: uppercase;
+            font-size: 60px;
+            font-family: 'Proxima Nova Semibold';
+            z-index: 2;
+        }
+        p{
+            width: 50%;
+            padding-right: 61px;
+            box-sizing: border-box;
+            z-index: 2;
+        }
+        .section__number{
+            position: absolute;
+            top: 75px;
+            left: 68px;
+            font-family: 'Merriweather';
+            color: #707070;
+        }                            
+    }
+
+    a{
+        text-decoration: none;
+        color: #fff;
+        z-index: 2;
+        position: relative;
+    }
+    h1, h2, h3, p{
+        margin: 0;
+    }
+    .links_wrapper{
+        overflow: hidden;
+        width: fit-content;
+    }
+    .radial_gradient_yellow{
+        width: 745px;
+        height: 757px;
+        position: absolute;
+        top: -574px;
+        right: -387px;
+        transform: rotate(-10deg);
+        background-image: radial-gradient(ellipse 372px 378px, #FFC810, transparent);
+    }
+    .radial_gradient_blue{
+        width: 745px;
+        height: 757px;
+        position: absolute;
+        top: -600px;
+        right: -180px;
+        transform: rotate(-10deg);
+        background-image: radial-gradient(ellipse 372px 378px, #107EFF, transparent);
+    }
+    .radial_gradient_red{
+        width: 745px;
+        height: 757px;
+        position: absolute;
+        top: -205px;
+        left: -415px;
+        transform: rotate(-10deg);
+        background-image: radial-gradient(ellipse 372px 378px, #460D23, transparent);
+    }
+    .radial_gradient_blue2{
+        width: 2744px;
+        height: 1326px;
+        position: absolute;
+        top: -700px;
+        right: -1700px;
+        transform: rotate(-5deg);
+        background-image: radial-gradient(ellipse 1372px 663px, #0D123B, transparent);
     }
 }

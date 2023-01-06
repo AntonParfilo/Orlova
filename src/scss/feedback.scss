@@ -1,0 +1,122 @@
+.feedback{
+    border-bottom: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    padding-top: 165px;
+    padding-bottom: 143px;
+    header{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 158px;
+        h1{
+            width: 45%;
+            text-transform: uppercase;
+            font-size: 65px;
+            font-family: 'Proxima Nova Bold';
+        }
+        p{
+            width: 45%;
+            padding-right: 61px;
+            box-sizing: border-box;
+        }
+    }
+    .feedback__row{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+        .feedback__row_lc{
+            width: 45%;
+            border-bottom: 1px solid #fff;
+            h3{
+                font-size: 30px;
+                font-family: 'Proxima Nova Semibold';
+                text-transform: uppercase;
+            }    
+        .feedback__block_budget{
+            margin-top: 51px;
+            display: flex;
+            .feedback__block_budget_text{
+                margin-left: 48px;
+                display: flex;
+                flex-direction: column;
+                p{
+                    font-size: 30px;
+                    margin-bottom: 8px;
+                }
+                span{
+                    font-size: 10px;
+                    color: #EA2828;
+                }
+                .budget{
+                    font-size: 30px;
+                    color: #fff;
+                }
+            }
+        }
+        .feedback__send{
+            border: none;
+            padding: 45px 165px 50px;
+            background-color: #fff;
+            font-family: 'Proxima Nova Semibold';
+            font-size: 20px;
+            color: #fff;
+            background-color: rgba(255, 255, 255, .09);
+            margin-top: 82px;
+            transition: .5s;
+            &:hover{
+                cursor: pointer;
+                background-color: rgba(255, 255, 255, .2);
+
+            }
+        }   
+        }
+        .feedback__row_rc{
+            width: 45%;
+            border-bottom: 1px solid #fff;
+            height: fit-content;
+        }
+        input{
+            font-size: 30px;
+            font-family: 'Proxima Nova Bold';
+            background-color: #000;
+            border: none;
+            outline: none;
+            color: #fff;
+            padding: 30px 0;
+        }
+        .input_name{
+            position: relative;
+            &::after{
+                content: "Your Name";
+                position: absolute;
+                bottom: 84px;
+                left: 0;
+                color: #707070;
+            }
+        }
+        .input_phone{
+            position: relative;
+            &::after{
+                content: "Your Contact / Email or Phone with Messengers ";
+                position: absolute;
+                bottom: 84px;
+                left: 0;
+                color: #707070;
+            }
+        }
+        .input_comment{
+            position: relative;
+            &::after{
+                content: "Add text or Comment About project ";
+                position: absolute;
+                bottom: 84px;
+                left: 0;
+                color: #707070;
+            }
+        }
+    }
+    .budget__row{
+        border-bottom: none !important;
+        margin-bottom: 0;
+    }
+}

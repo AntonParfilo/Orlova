@@ -1,0 +1,16 @@
+@keyframes border-menu-show{
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 0;
+    }
+}
+@keyframes border-menu-hide{
+    100% {
+        right: -100%;
+    }
+    0% {
+        right: 0;
+    }
+}
