@@ -1,8 +1,8 @@
+@import './adaptiveValue.scss';
 .header{
     border-bottom: 1px solid #fff;
     .header__topText{
         overflow: hidden;
-        // transition: 1s;
         transition: background-color .1s, top 1s, left 1s, right 1s;
         position: fixed;
         z-index: 100;
@@ -12,7 +12,8 @@
         font-size: 20px;
         color: #0D86FF;
         height: 80px;
-        padding: 0 112.5px 0 0;
+        // padding: 0 112.5px 0 0;
+        @include adaptiveValue("padding-right", 112.5, 15, 1920, 900);
         display: flex;
         align-items: center;
         margin: 0;
@@ -39,8 +40,10 @@
         }
         img{
             transition: .1s;
-            height: 50px;
-            margin-left: 105px;
+            // width: 265px;
+            @include adaptiveValue("width", 265, 100, 1920, 320);
+            // margin-left: 105px;
+            @include adaptiveValue("margin-left", 105, 36.5, 1920, 320);
             transform: translateY(200%);
         }
         .header__menu_links{
@@ -63,9 +66,14 @@
             }
     }
     .logo{
-        width: 300px;
+        // width: 300px;
+        @include adaptiveValue("width", 300, 100, 1920, 320);
         border-top: none;
-        margin: 187px 0 128px 69px;
+        // margin: 187px 0 128px 69px;
+        margin-top: 187px;
+        margin-bottom: 128px;
+        margin-left: 69px;
+        @include adaptiveValue("margin-left", 69, 0, 1920, 320);
         opacity: 0;
         animation: opacity-show 3s;
         animation-fill-mode: forwards;
@@ -112,7 +120,8 @@
         margin-right: 61px;
         .header__menu_links_wrapper{
             overflow: hidden;
-            margin-left: 81px;
+            // margin-left: 81px;
+            @include adaptiveValue("margin-left", 81, 15, 1200, 900);
         }
        a{
         position: relative;

@@ -13,7 +13,6 @@
   font-size: 20px;
   color: #0D86FF;
   height: 80px;
-  padding: 0 112.5px 0 0;
   display: flex;
   align-items: center;
   margin: 0;
@@ -28,6 +27,16 @@
           animation-fill-mode: forwards;
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
+}
+@supports (padding-right: clamp( 0.9375rem , -4.4393382353rem  +  9.5588235294vw , 7.03125rem )) {
+  .header .header__topText {
+    padding-right: clamp( 0.9375rem , -4.4393382353rem  +  9.5588235294vw , 7.03125rem ) !important;
+  }
+}
+@supports not (padding-right: clamp( 0.9375rem , -4.4393382353rem  +  9.5588235294vw , 7.03125rem )) {
+  .header .header__topText {
+    padding-right: calc(0.9375rem + 6.09375 * (100vw - 56.25rem) / 63.75);
+  }
 }
 .header .header__topText span {
   color: #FFD00D;
@@ -46,9 +55,27 @@
 }
 .header .header__topText img {
   transition: 0.1s;
-  height: 50px;
-  margin-left: 105px;
   transform: translateY(200%);
+}
+@supports (width: clamp( 6.25rem , 4.1875rem  +  10.3125vw , 16.5625rem )) {
+  .header .header__topText img {
+    width: clamp( 6.25rem , 4.1875rem  +  10.3125vw , 16.5625rem ) !important;
+  }
+}
+@supports not (width: clamp( 6.25rem , 4.1875rem  +  10.3125vw , 16.5625rem )) {
+  .header .header__topText img {
+    width: calc(6.25rem + 10.3125 * (100vw - 20rem) / 100);
+  }
+}
+@supports (margin-left: clamp( 2.28125rem , 1.425rem  +  4.28125vw , 6.5625rem )) {
+  .header .header__topText img {
+    margin-left: clamp( 2.28125rem , 1.425rem  +  4.28125vw , 6.5625rem ) !important;
+  }
+}
+@supports not (margin-left: clamp( 2.28125rem , 1.425rem  +  4.28125vw , 6.5625rem )) {
+  .header .header__topText img {
+    margin-left: calc(2.28125rem + 4.28125 * (100vw - 20rem) / 100);
+  }
 }
 .header .header__topText .header__menu_links {
   transition: 0.4s;
@@ -69,9 +96,10 @@
   display: block !important;
 }
 .header .logo {
-  width: 300px;
   border-top: none;
-  margin: 187px 0 128px 69px;
+  margin-top: 187px;
+  margin-bottom: 128px;
+  margin-left: 69px;
   opacity: 0;
   -webkit-animation: opacity-show 3s;
           animation: opacity-show 3s;
@@ -79,6 +107,26 @@
           animation-fill-mode: forwards;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
+}
+@supports (width: clamp( 6.25rem , 3.75rem  +  12.5vw , 18.75rem )) {
+  .header .logo {
+    width: clamp( 6.25rem , 3.75rem  +  12.5vw , 18.75rem ) !important;
+  }
+}
+@supports not (width: clamp( 6.25rem , 3.75rem  +  12.5vw , 18.75rem )) {
+  .header .logo {
+    width: calc(6.25rem + 12.5 * (100vw - 20rem) / 100);
+  }
+}
+@supports (margin-left: clamp( 0.0000000625rem , -0.862499925rem  +  4.3124999375vw , 4.3125rem )) {
+  .header .logo {
+    margin-left: clamp( 0.0000000625rem , -0.862499925rem  +  4.3124999375vw , 4.3125rem ) !important;
+  }
+}
+@supports not (margin-left: clamp( 0.0000000625rem , -0.862499925rem  +  4.3124999375vw , 4.3125rem )) {
+  .header .logo {
+    margin-left: calc(0.0000000625rem + 4.3124999375 * (100vw - 20rem) / 100);
+  }
 }
 .header .header__text {
   text-transform: uppercase;
@@ -130,7 +178,16 @@
 }
 .header .header__menu_links .header__menu_links_wrapper {
   overflow: hidden;
-  margin-left: 81px;
+}
+@supports (margin-left: clamp( 0.9375rem , -11.4375rem  +  22vw , 5.0625rem )) {
+  .header .header__menu_links .header__menu_links_wrapper {
+    margin-left: clamp( 0.9375rem , -11.4375rem  +  22vw , 5.0625rem ) !important;
+  }
+}
+@supports not (margin-left: clamp( 0.9375rem , -11.4375rem  +  22vw , 5.0625rem )) {
+  .header .header__menu_links .header__menu_links_wrapper {
+    margin-left: calc(0.9375rem + 4.125 * (100vw - 56.25rem) / 18.75);
+  }
 }
 .header .header__menu_links a {
   position: relative;
@@ -869,12 +926,15 @@ footer .footer__rc:hover {
   }
   33% {
     transform: translate(0, -300%);
+    right: 112px;
   }
   66% {
-    transform: translate(-300%, -300%);
+    transform: translate(50%, -300%);
+    right: 50%;
   }
   100% {
-    transform: translate(-300%, -50%);
+    transform: translate(50%, -50%);
+    right: 50%;
   }
 }
 @keyframes stand-swap {
@@ -883,12 +943,15 @@ footer .footer__rc:hover {
   }
   33% {
     transform: translate(0, -300%);
+    right: 112px;
   }
   66% {
-    transform: translate(-300%, -300%);
+    transform: translate(50%, -300%);
+    right: 50%;
   }
   100% {
-    transform: translate(-300%, -50%);
+    transform: translate(50%, -50%);
+    right: 50%;
   }
 }
 body {
