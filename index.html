@@ -199,12 +199,12 @@
                 <div class="feedback__row" opacity-anim="opacity">
                     <div  class="feedback__row_lc">
                         <div class="input_name">
-                            <input type="text">
+                            <input class="input_client_name" type="text">
                         </div>
                     </div>
                     <div  class="feedback__row_rc">
                         <div class="input_phone">
-                            <input type="tel" placeholder="+35 088 528 63 59">
+                            <input class="input_client_contact" type="tel" placeholder="+35 088 528 63 59">
                         </div>
                     </div>
                 </div>
@@ -223,7 +223,7 @@
                     </div>
                     <div class="feedback__row_rc">
                         <div class="input_comment">
-                            <input type="text">
+                            <input class="input_client_coment" type="text">
                         </div>
                     </div>
                 </div>
@@ -273,7 +273,19 @@
 
     <div class="modal__wrapper"></div>
     <div class="modal">
-        modal
+        <div class="modal__row">
+            <h3>YOUR NAME: </h3><span class="client_name"></span>
+        </div>
+        <div class="modal__row">
+            <h3>YOUR CONTACT: </h3><span class="client_contact"></span>
+        </div>
+        <div class="modal__row">
+            <h3>YOUR BUDGET: </h3><span class="client_budget"></span>
+        </div>
+        <div class="modal__row">
+            <h3>YOUR COMMENT: </h3><span class="client_coment"></span>
+        </div>
+        <div class="close__modal">Close</div>
     </div>
   
   
