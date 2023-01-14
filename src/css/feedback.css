@@ -15,16 +15,19 @@
   text-transform: uppercase;
   font-size: 65px;
   font-family: "Proxima Nova Bold";
+  transform: translateY(100%);
 }
 .feedback header p {
   width: 45%;
   padding-right: 61px;
   box-sizing: border-box;
+  transform: translateY(100%);
 }
 .feedback .feedback__row {
   display: flex;
   justify-content: space-between;
   margin-bottom: 100px;
+  opacity: 0;
 }
 .feedback .feedback__row .feedback__row_lc {
   width: 45%;

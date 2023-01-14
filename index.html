@@ -7,21 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/main.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
     <title>Orlova Agency</title>
 </head>
 
 <body>
     <div class="container">
-        <header class="header">
+        <header class="header ">
             <div class="radial_gradient_yellow"></div>
             <div class="radial_gradient_blue"></div>
-            <div class="header__topText"><span>Stand</span> with Ukraine</div>
-            <img class="logo" src="./src/img/Group 6.png" alt="logo">
+            <div class="header__topText">
+                <img class="logo__header" src="./src/img/Group 6.png" alt="Logo">
+                <div class="stand"><span>Stand</span>&nbsp;with Ukraine</div>
+                <div class="header__menu_links">
+                    <div class="links_wrapper">
+                        <a href="#">PORTFOLIO</a>
+                    </div>
+                    <div class="links_wrapper header__menu_links_wrapper">
+                        <a href="#">CONTACT US</a>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-sections">
+            <img class="logo slide-sections__item" src="./src/img/Group 6.png" alt="logo">
             <div class="header__text container_text">
-                <h1>Lunaria is the leading IT</br>
-                    integrator for taking your</br>
-                    business to the next level</br>
-                </h1>
+                <div class="animation__wrapper">
+                    <h1>Lunaria is the leading IT</br>
+                        integrator for taking your</br>
+                        business to the next level</br>
+                    </h1>
+                </div>
                 <h2>
                     Drive profit with omnichannel IT transformation
                 </h2>
@@ -38,56 +54,64 @@
                 </div>
             </div>
         </header>
-        <section class="section container_text">
-            <span class="section__number">01</span>
-            <h1>Design & UX</h1>
-            <p>Development of a detailed roadmap to create or enhance your brand or digital product experience</p>
-        </section>
-        <section class="section container_text">
-            <div class="radial_gradient_red"></div>
-            <div class="radial_gradient_blue2"></div>
-            <span class="section__number">02</span>
-            <h1>Development </br> and integration</h1>
-            <p>Development, support, and scaling of high-traffic and high-load IT projects. Development of core website functionality, data storage and processing systems, data platforms, and buses. Back-end-developmentBack-end-development.</p>
-        </section>
-        <section class="section container_text">
-            <span class="section__number">03</span>
-            <h1>Business and </br> systems analytics</h1>
-            <p>Transformation of business development goals into an approved list of tasks for the implementation, customization, or integration of third-party or in-house IT solutions.</p>
-        </section>
-
-
-
-        <section class="slider">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="collapse">
-                        <h1 class="collapse__title">Quality</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.</p>
+        
+            <section class="slide-sections__item">
+                <section class="section container_text" border-anim="border">
+                    <span class="section__number">01</span>
+                        <div class="animation__wrapper">
+                            <h1 text-anim="text">Design & UX</h1>
+                            <p text-anim="text">Development of a detailed roadmap to create or enhance your brand or digital product experience</p>
+                        </div>
+                </section>
+                <section class="section container_text" border-anim="border">
+                    <div class="radial_gradient_red"></div>
+                    <div class="radial_gradient_blue2"></div>
+                    <span class="section__number">02</span>
+                    <div class="animation__wrapper">
+                        <h1 text-anim="text">Development </br> and integration</h1>
+                        <p text-anim="text">Development, support, and scaling of high-traffic and high-load IT projects. Development of core website functionality, data storage and processing systems, data platforms, and buses. Back-end-developmentBack-end-development.</p>
+                    </div>
+                </section>
+                <section class="section container_text" border-anim="border">
+                    <span class="section__number">03</span>
+                    <div class="animation__wrapper">
+                        <h1 text-anim="text">Business and </br> systems analytics</h1>
+                        <p text-anim="text">Transformation of business development goals into an approved list of tasks for the implementation, customization, or integration of third-party or in-house IT solutions.</p>
+                    </div>
+                </section>
+            </section>
+        
+            <section class="slider slide-sections__item">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="collapse">
+                            <h1 class="collapse__title">Quality</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="collapse">
+                            <h1 class="collapse__title">Guaranty</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="collapse">
+                            <h1 class="collapse__title">transparency </br>of cooperation</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="collapse">
+                            <h1 class="collapse__title">confidentiality</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="collapse">
-                        <h1 class="collapse__title">Guaranty</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="collapse">
-                        <h1 class="collapse__title">transparency </br>of cooperation</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.</p>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="collapse">
-                        <h1 class="collapse__title">confidentiality</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="about">
-            <header class="container_text">
+            </section>
+        
+        <section class="about slide-sections__item">
+            <header class="container_text" data-anim="opacity">
                 <div class="about__lc">
                     <h1>ABOUT US</h1>
                 </div>
@@ -100,30 +124,30 @@
                 </div>
             </header>
             <div class="about__faces">
-                <div class="face">
-                    <img src="./src/img/face1.png" alt="face1">
-                    <div class="face__text left41">
+                <div class="face" data-anim="image" style="background: url('./src/img/face1.png');">
+                    <div class="face__text animation__wrapper left41">
                         <h3>Vanessa Kanu</h3>
-                        <span class="face__desc">Creative Design Derector</span>
+                        <div class="face__desc">Creative Design Derector</div>
                     </div>
+                    <div class="image__wrapper"></div>
                 </div>
-                <div class="face">
-                    <img src="./src/img/face2.png" alt="face1">
-                    <div class="face__text left15">
+                <div class="face" data-anim="image" style="background: url('./src/img/face2.png');">
+                    <div class="face__text animation__wrapper left15">
                         <h3>Jeff Puritt</h3>
-                        <span class="face__desc">Chief Legal Officer</span>
+                        <div class="face__desc">Chief Legal Officer</div>
                     </div>
+                    <div class="image__wrapper"></div>
                 </div>
-                <div class="face">
-                    <img src="./src/img/face3.png" alt="face1">
-                    <div class="face__text left25">
+                <div class="face" data-anim="image" style="background: url('./src/img/face3.png');">
+                    <div class="face__text animation__wrapper left25">
                         <h3>Michael Ringman</h3>
-                        <span class="face__desc">Creative Design Derector</span>
+                        <div class="face__desc">Creative Design Derector</div>
                     </div>
+                    <div class="image__wrapper"></div>
                 </div>
             </div>
         </section>
-        <section class="projects">
+        <section class="projects slide-sections__item">
             <header class="container_text">
                 <h1>projects</h1>
                 <p>we combine sharp design with rich technology to craft exciting brands.</p>
@@ -162,49 +186,51 @@
         </section>
 
 
-        <section class="feedback container_text">
-            <header>
-                <h1>tell us about</br>
-                    your project</h1>
-                <p>Since the launch of his eponymous jewelry line in 2000, 
-                    Marco Bicego has redefined modern luxury with 
-                    the launch of his eponymous jewelry line in 8u
-                    Marco Bicego has redefined modern luxury with sensuous,</p>
-            </header>
-            <div class="feedback__row">
-                <div class="feedback__row_lc">
-                    <div class="input_name">
-                        <input type="text">
-                    </div>
-                </div>
-                <div class="feedback__row_rc">
-                    <div class="input_phone">
-                        <input type="tel" placeholder="+35 088 528 63 59">
-                    </div>
-                </div>
-            </div>
-            <div class="feedback__row budget__row">
-                <div class="feedback__row_lc budget__row">
-                   <h3>Your budget of project:</h3>
-                   <div class="feedback__block_budget">
-                        <input class="styled-slider slider-progress" type="range" min="500" max="25000" value="1250">
-                        <div class="feedback__block_budget_text">
-                            <p>$ <span class="budget">1250</span></p>
-                            <span>start from $ 500</br>final project price «more …></span>
-                            <p>More than $ 25 000</p>
+        <div class="slide-sections__item">
+            <section class="feedback container_text">
+                <header class="animation__wrapper">
+                    <h1 text-anim="text">tell us about</br>
+                        your project</h1>
+                    <p text-anim="text">Since the launch of his eponymous jewelry line in 2000,
+                        Marco Bicego has redefined modern luxury with
+                        the launch of his eponymous jewelry line in 8u
+                        Marco Bicego has redefined modern luxury with sensuous,</p>
+                </header>
+                <div class="feedback__row" opacity-anim="opacity">
+                    <div  class="feedback__row_lc">
+                        <div class="input_name">
+                            <input type="text">
                         </div>
-                   </div>
-                   <button class="feedback__send">SEND</button>
-                </div>
-                <div class="feedback__row_rc">
-                    <div class="input_comment">
-                        <input type="text">
+                    </div>
+                    <div  class="feedback__row_rc">
+                        <div class="input_phone">
+                            <input type="tel" placeholder="+35 088 528 63 59">
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+                <div class="feedback__row budget__row" opacity-anim="opacity">
+                    <div class="feedback__row_lc budget__row">
+                       <h3>Your budget of project:</h3>
+                       <div class="feedback__block_budget">
+                            <input class="styled-slider slider-progress" type="range" min="500" max="25000" value="1250">
+                            <div class="feedback__block_budget_text">
+                                <p>$ <span class="budget">1250</span></p>
+                                <span>start from $ 500</br>final project price «more …></span>
+                                <p>More than $ 25 000</p>
+                            </div>
+                       </div>
+                       <button class="feedback__send">SEND</button>
+                    </div>
+                    <div class="feedback__row_rc">
+                        <div class="input_comment">
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-        <div class="contact container_text">
+        <div class="contact container_text slide-sections__item">
             <div class="contact__lc">
                 <h1>Contact US</h1>
                 <h3>Lunaria@gmail.com</h3>
@@ -226,27 +252,39 @@
                 </div>
             </div>
         </div>
-
-        <footer>
-            <div class="footer__lc">
-                <p>LUNARIA © 2010–2022 All rights are register</p>
-                <div class="footer__links">
-                    <a href="#">TERMS</a>
-                    <a href="#">POLICY</a>
+        <div class="slide-sections__item">
+            <footer>
+                <div class="footer__lc">
+                    <p>LUNARIA © 2010–2022 All rights are register</p>
+                    <div class="footer__links">
+                        <a href="#">TERMS</a>
+                        <a href="#">POLICY</a>
+                    </div>
                 </div>
-            </div>
-            <div class="footer__rc">
-                <img src="./src/img/Group 2.png" alt="arrow">
-                <p>UP</p>
-            </div>
-        </footer>
+                <div class="footer__rc to_up">
+                    <img src="./src/img/Group 2.png" alt="arrow">
+                    <p>UP</p>
+                </div>
+            </footer>
+        </div>
+        </div>
     </div>
+    
+
+    <div class="modal__wrapper"></div>
+    <div class="modal">
+        modal
+    </div>
+  
+  
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="./src/js/slider.js"></script>
     <script src="./src/js/carousel.js"></script>
     <script src="./src/js/main.js"></script>
+    <script src="./src/js/scrollAnimation.js"></script>
+    <script src="./src/js/gsap.js"></script>
 </body>
 
 </html>

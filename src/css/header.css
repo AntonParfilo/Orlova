@@ -1,34 +1,111 @@
+.header {
+  border-bottom: 1px solid #fff;
+}
 .header .header__topText {
+  overflow: hidden;
+  transition: background-color 0.1s, top 1s, left 1s, right 1s;
+  position: fixed;
+  z-index: 100;
+  top: 24px;
+  left: 41.5px;
+  right: 36.5px;
   font-size: 20px;
   color: #0D86FF;
-  padding: 28.5px 112.5px 28.5px 0;
+  height: 80px;
+  padding: 0 112.5px 0 0;
+  display: flex;
+  align-items: center;
   margin: 0;
   border-top: 1px #fff solid;
   border-bottom: 1px #fff solid;
   text-align: right;
-  width: 100%;
   box-sizing: border-box;
-  position: relative;
+  opacity: 0;
+  -webkit-animation: opacity-show 3s;
+          animation: opacity-show 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 .header .header__topText span {
   color: #FFD00D;
 }
+.header .header__topText .stand {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  position: absolute;
+  right: 112px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.header .header__topText img {
+  transition: 0.1s;
+  height: 50px;
+  margin-left: 105px;
+  transform: translateY(200%);
+}
+.header .header__topText .header__menu_links {
+  transition: 0.4s;
+  background-color: #000;
+  margin-right: -3px;
+  display: flex;
+  transform: translateY(20%);
+}
+.header .header__scrolling {
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  background-color: #000 !important;
+  display: flex !important;
+  justify-content: space-between !important;
+}
+.header .header__scrolling img {
+  display: block !important;
+}
 .header .logo {
   width: 300px;
-  margin: 80px 0 128px 69px;
+  border-top: none;
+  margin: 187px 0 128px 69px;
+  opacity: 0;
+  -webkit-animation: opacity-show 3s;
+          animation: opacity-show 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 .header .header__text {
   text-transform: uppercase;
+  overflow: hidden;
 }
 .header .header__text h1 {
   font-size: 70px;
   font-family: "Proxima Nova Bold";
   margin: 0;
+  transform: translateY(200%);
+  -webkit-animation: text-show 1s;
+          animation: text-show 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
 }
 .header .header__text h2 {
   font-size: 30px;
   margin-top: 46px;
   font-family: "Marcellus Regular";
+  transform: translateY(200%);
+  -webkit-animation: text-show 1s;
+          animation: text-show 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 .header .header__menu {
   display: flex;
@@ -36,20 +113,29 @@
   font-family: "Proxima Nova Bold";
   font-size: 20px;
   margin: 161px 0 50px;
+  opacity: 0;
+  -webkit-animation: opacity-show 3s;
+          animation: opacity-show 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  position: relative;
+  z-index: 2;
 }
-.header .header__menu .header__menu_links {
+.header .header__menu_links {
   display: flex;
   margin-right: 61px;
 }
-.header .header__menu .header__menu_links .header__menu_links_wrapper {
+.header .header__menu_links .header__menu_links_wrapper {
   overflow: hidden;
   margin-left: 81px;
 }
-.header .header__menu .header__menu_links a {
+.header .header__menu_links a {
   position: relative;
   overflow: hidden;
 }
-.header .header__menu .header__menu_links a::after {
+.header .header__menu_links a::after {
   content: "";
   position: absolute;
   right: -100%;
@@ -62,7 +148,7 @@
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
-.header .header__menu .header__menu_links a:hover::after {
+.header .header__menu_links a:hover::after {
   content: "";
   position: absolute;
   left: -100%;

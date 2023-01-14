@@ -13,17 +13,20 @@
             text-transform: uppercase;
             font-size: 65px;
             font-family: 'Proxima Nova Bold';
+            transform: translateY(100%);
         }
         p{
             width: 45%;
             padding-right: 61px;
             box-sizing: border-box;
+            transform: translateY(100%);
         }
     }
     .feedback__row{
         display: flex;
         justify-content: space-between;
         margin-bottom: 100px;
+        opacity: 0;
         .feedback__row_lc{
             width: 45%;
             border-bottom: 1px solid #fff;
