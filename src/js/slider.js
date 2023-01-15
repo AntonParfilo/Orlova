@@ -3,7 +3,18 @@ const swiper = new Swiper('.slider', {
     loop: true,
     autoplay: {
       delay: 3000,
-    }
+    },
+    breakpoints: {
+      320: {
+        slidesPerView:1,
+      },
+      600: {
+          slidesPerView:2,
+      },
+      1250: {
+          slidesPerView:3,
+      },
+    },
 });
 
 $('.collapse__title').on('click', (el)=>{

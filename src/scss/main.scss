@@ -15,18 +15,24 @@ body{
     background-color: #000000;
     color: #fff;
     font-family: 'Proxima Nova Regular';
-    padding: 23.5px 41.5px 0 36.5px;
     margin: 0;
     font-size: 24px;
-    overflow-x: hidden;
     
+    .container__gradient{
+        @include adaptiveValue('padding-left', 36.5, 10, 1920, 320);
+        @include adaptiveValue('padding-right', 41.5, 10, 1920, 320);
+        @include adaptiveValue('padding-top', 23.5, 10, 1920, 320);
+        position: relative;
+        overflow: hidden;
+    }
     .container{
         max-width: 1920px;
         display: block;
         margin: 0 auto;
     }
     .container_text{
-        padding-left: 345px;  
+        padding-left: 345px;
+        @include adaptiveValue('padding-left', 345, 0, 1500, 1000)
     }
     .section{
         height: 360px;
@@ -37,22 +43,26 @@ body{
         h1{
             width: 50%;
             text-transform: uppercase;
-            font-size: 60px;
+            // font-size: 60px;
+            @include adaptiveValue('font-size', 60, 22, 1200, 320);
             font-family: 'Proxima Nova Semibold';
             z-index: 2;
             transform: translateY(100%);
         }
         p{
             width: 50%;
-            padding-right: 61px;
+            // padding-right: 61px;
+            @include adaptiveValue('padding-right', 61, 0, 768, 500);
             box-sizing: border-box;
             z-index: 2;
             transform: translateY(100%);
         }
         .section__number{
             position: absolute;
-            top: 75px;
-            left: 68px;
+            // top: 75px;
+            @include adaptiveValue('top', 75, 20, 768, 500);
+            @include adaptiveValue('left', 68, 20, 768, 500);
+            // left: 68px;
             font-family: 'Merriweather';
             color: #707070;
         }
@@ -89,6 +99,7 @@ body{
         overflow: hidden;
         width: 100%;
         display: flex;
+        align-items: center;
     }
     .active-text{
         animation: text-show .5s forwards;
@@ -231,5 +242,20 @@ body{
     .show__modal{
         opacity: 1;
         transform: translate(-50%, -50%) scale(100%);
+    }
+}
+
+
+@media(max-width: 500px){
+    .animation__wrapper{
+        flex-direction: column;
+        h1{
+            width: 100% !important;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        p{
+            width: 100% !important;
+        }
     }
 }

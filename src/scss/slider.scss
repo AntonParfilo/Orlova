@@ -2,6 +2,10 @@
     height: 360px;
     border-bottom: 1px #fff solid;
 }
+.slider__overflow{
+    position: relative;
+    overflow: hidden;
+}
 .swiper-slide{
     text-transform: uppercase;
     display: flex;
@@ -12,7 +16,8 @@
 .collapse{
     position: relative;
     h1{
-        font-size: 40px;
+        // font-size: 40px;
+        @include adaptiveValue('font-size', 40, 22, 1000, 500);
         color: #A0A0A0;
         cursor: pointer;
         &:hover{
@@ -38,8 +43,10 @@
         width: 42px;
         height: 28px;
         position: absolute;
-        left: -69px;
-        top: 10px;
+        // left: -69px;
+        @include adaptiveValue('left', -69, -40, 1000, 500);
+        @include adaptiveValue('top', 10, 0, 1000, 500);
+        // top: 10px;
     }
 }
 
@@ -49,6 +56,8 @@
     }
     p{
         opacity: 1;
+        z-index: 200;
+        // position: relative;
     }
     &::after{
         content: url('../img/—.png');
@@ -57,5 +66,6 @@
         position: absolute;
         left: -69px;
         top: 10px;
+        overflow: hidden;
     }
 }
