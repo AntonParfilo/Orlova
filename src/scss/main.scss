@@ -31,8 +31,7 @@ body{
         margin: 0 auto;
     }
     .container_text{
-        padding-left: 345px;
-        @include adaptiveValue('padding-left', 345, 0, 1500, 1000)
+        @include adaptiveValue('padding-left', 345, 0, 1500, 1300)
     }
     .section{
         height: 360px;
@@ -43,7 +42,6 @@ body{
         h1{
             width: 50%;
             text-transform: uppercase;
-            // font-size: 60px;
             @include adaptiveValue('font-size', 60, 22, 1200, 320);
             font-family: 'Proxima Nova Semibold';
             z-index: 2;
@@ -51,7 +49,6 @@ body{
         }
         p{
             width: 50%;
-            // padding-right: 61px;
             @include adaptiveValue('padding-right', 61, 0, 768, 500);
             box-sizing: border-box;
             z-index: 2;
@@ -59,10 +56,8 @@ body{
         }
         .section__number{
             position: absolute;
-            // top: 75px;
             @include adaptiveValue('top', 75, 20, 768, 500);
             @include adaptiveValue('left', 68, 20, 768, 500);
-            // left: 68px;
             font-family: 'Merriweather';
             color: #707070;
         }
@@ -76,6 +71,9 @@ body{
             background-color: #fff;
             z-index: 2;
         }                            
+    }
+    .sections{
+        padding-bottom: 200px;
     }
 
     a{
@@ -211,8 +209,8 @@ body{
         opacity: 0;
         transform: translate(-50%, -50%) scale(0%);
         background-color: #000;
-        width: 50vw;
-        height: 50vh;
+        @include adaptiveValue('width', 850, 300, 1920, 375);
+        @include adaptiveValue('height', 450, 300, 1920, 375);
         border: 1px #ccc solid;
         box-shadow: 0px 0px 10px #ccc;
         z-index: 300;
@@ -227,6 +225,7 @@ body{
             margin-bottom: 10px;
             h3{
                 width: fit-content;
+                @include adaptiveValue('font-size', 24, 18, 1920, 768);
             }
         }
         .close__modal{

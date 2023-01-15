@@ -1,7 +1,4 @@
-.header {
-  border-bottom: 1px solid #fff;
-}
-.header .header__topText {
+.header__topText {
   overflow: hidden;
   transition: background-color 0.1s, top 1s, left 1s, right 1s;
   position: fixed;
@@ -27,74 +24,65 @@
           animation-delay: 0.5s;
 }
 @supports (height: clamp( 2.5rem , 1.3235294118rem  +  5.8823529412vw , 5rem )) {
-  .header .header__topText {
+  .header__topText {
     height: clamp( 2.5rem , 1.3235294118rem  +  5.8823529412vw , 5rem ) !important;
   }
 }
 @supports not (height: clamp( 2.5rem , 1.3235294118rem  +  5.8823529412vw , 5rem )) {
-  .header .header__topText {
+  .header__topText {
     height: calc(2.5rem + 2.5 * (100vw - 20rem) / 42.5);
   }
 }
 @supports (padding-right: clamp( 0.625rem , 0.23125rem  +  1.96875vw , 2.59375rem )) {
-  .header .header__topText {
+  .header__topText {
     padding-right: clamp( 0.625rem , 0.23125rem  +  1.96875vw , 2.59375rem ) !important;
   }
 }
 @supports not (padding-right: clamp( 0.625rem , 0.23125rem  +  1.96875vw , 2.59375rem )) {
-  .header .header__topText {
+  .header__topText {
     padding-right: calc(0.625rem + 1.96875 * (100vw - 20rem) / 100);
   }
 }
-.header .header__topText span {
+.header__topText span {
   color: #FFD00D;
 }
-.header .header__topText .stand {
+.header__topText .stand {
   display: flex;
   align-items: center;
   align-items: center;
   position: absolute;
+  right: 6%;
   top: 50%;
   transform: translateY(-50%);
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
-@supports (right: clamp( 1.25rem , -9.4776119403rem  +  34.328358209vw , 7rem )) {
-  .header .header__topText .stand {
-    right: clamp( 1.25rem , -9.4776119403rem  +  34.328358209vw , 7rem ) !important;
-  }
-}
-@supports not (right: clamp( 1.25rem , -9.4776119403rem  +  34.328358209vw , 7rem )) {
-  .header .header__topText .stand {
-    right: calc(1.25rem + 5.75 * (100vw - 31.25rem) / 16.75);
-  }
-}
-.header .header__topText img {
+.header__topText img {
   transition: 0.1s;
   transform: translateY(200%);
 }
 @supports (width: clamp( 6.25rem , 4.1875rem  +  10.3125vw , 16.5625rem )) {
-  .header .header__topText img {
+  .header__topText img {
     width: clamp( 6.25rem , 4.1875rem  +  10.3125vw , 16.5625rem ) !important;
   }
 }
 @supports not (width: clamp( 6.25rem , 4.1875rem  +  10.3125vw , 16.5625rem )) {
-  .header .header__topText img {
+  .header__topText img {
     width: calc(6.25rem + 10.3125 * (100vw - 20rem) / 100);
   }
 }
-@supports (margin-left: clamp( 0.0000000625rem , -0.862499925rem  +  4.3124999375vw , 4.3125rem )) {
-  .header .header__topText img {
-    margin-left: clamp( 0.0000000625rem , -0.862499925rem  +  4.3124999375vw , 4.3125rem ) !important;
+@supports (margin-left: clamp( 0.0000000625rem , -1.749999925rem  +  8.7499999375vw , 8.75rem )) {
+  .header__topText img {
+    margin-left: clamp( 0.0000000625rem , -1.749999925rem  +  8.7499999375vw , 8.75rem ) !important;
   }
 }
-@supports not (margin-left: clamp( 0.0000000625rem , -0.862499925rem  +  4.3124999375vw , 4.3125rem )) {
-  .header .header__topText img {
-    margin-left: calc(0.0000000625rem + 4.3124999375 * (100vw - 20rem) / 100);
+@supports not (margin-left: clamp( 0.0000000625rem , -1.749999925rem  +  8.7499999375vw , 8.75rem )) {
+  .header__topText img {
+    margin-left: calc(0.0000000625rem + 8.7499999375 * (100vw - 20rem) / 100);
   }
 }
-.header .header__topText .header__menu_links {
+.header__topText .header__menu_links {
   transition: 0.4s;
   background-color: #000;
   margin-right: -3px;
@@ -102,24 +90,28 @@
   transform: translateY(20%);
 }
 @supports (margin-right: clamp( 0.0000000625rem , -6.2203945724rem  +  16.0526313158vw , 3.8125rem )) {
-  .header .header__topText .header__menu_links {
+  .header__topText .header__menu_links {
     margin-right: clamp( 0.0000000625rem , -6.2203945724rem  +  16.0526313158vw , 3.8125rem ) !important;
   }
 }
 @supports not (margin-right: clamp( 0.0000000625rem , -6.2203945724rem  +  16.0526313158vw , 3.8125rem )) {
-  .header .header__topText .header__menu_links {
+  .header__topText .header__menu_links {
     margin-right: calc(0.0000000625rem + 3.8124999375 * (100vw - 38.75rem) / 23.75);
   }
 }
 @supports (font-size: clamp( 0.875rem , 0.6985294118rem  +  0.8823529412vw , 1.25rem )) {
-  .header .header__topText .header__menu_links {
+  .header__topText .header__menu_links {
     font-size: clamp( 0.875rem , 0.6985294118rem  +  0.8823529412vw , 1.25rem ) !important;
   }
 }
 @supports not (font-size: clamp( 0.875rem , 0.6985294118rem  +  0.8823529412vw , 1.25rem )) {
-  .header .header__topText .header__menu_links {
+  .header__topText .header__menu_links {
     font-size: calc(0.875rem + 0.375 * (100vw - 20rem) / 42.5);
   }
+}
+
+.header {
+  border-bottom: 1px solid #fff;
 }
 .header .header__scrolling {
   top: 0 !important;
@@ -147,10 +139,8 @@
   margin-top: 187px;
   margin-bottom: 128px;
   opacity: 0;
-  -webkit-animation: opacity-show 3s;
-          animation: opacity-show 3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  -webkit-animation: opacity-show 3s forwards;
+          animation: opacity-show 3s forwards;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
@@ -182,10 +172,8 @@
   font-family: "Proxima Nova Bold";
   margin: 0;
   transform: translateY(200%);
-  -webkit-animation: text-show 1s;
-          animation: text-show 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  -webkit-animation: text-show 1s forwards;
+          animation: text-show 1s forwards;
   -webkit-animation-delay: 1.6s;
           animation-delay: 1.6s;
 }
@@ -203,10 +191,8 @@
   margin-top: 46px;
   font-family: "Marcellus Regular";
   transform: translateY(200%);
-  -webkit-animation: text-show 1s;
-          animation: text-show 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  -webkit-animation: text-show 1s forwards;
+          animation: text-show 1s forwards;
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
@@ -226,12 +212,10 @@
   font-family: "Proxima Nova Bold";
   margin: 161px 0 50px;
   opacity: 0;
-  -webkit-animation: opacity-show 3s;
-          animation: opacity-show 3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation: opacity-show 3s forwards;
+          animation: opacity-show 3s forwards;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
   position: relative;
   z-index: 2;
 }

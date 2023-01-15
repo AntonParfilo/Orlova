@@ -2,7 +2,8 @@
     border-bottom: 1px solid #fff;
     display: flex;
     flex-direction: column;
-    padding-top: 165px;
+    // padding-top: 165px;
+    @include adaptiveValue('padding-top', 165, 30, 1920, 320);
     padding-bottom: 143px;
     header{
         display: flex;
@@ -11,7 +12,7 @@
         h1{
             width: 45%;
             text-transform: uppercase;
-            font-size: 65px;
+            @include adaptiveValue('font-size', 65, 30, 1920, 320);
             font-family: 'Proxima Nova Bold';
             transform: translateY(100%);
         }
@@ -43,7 +44,8 @@
                 display: flex;
                 flex-direction: column;
                 p{
-                    font-size: 30px;
+                    // font-size: 30px;
+                    @include adaptiveValue('font-size', 30, 20, 768, 375);
                     margin-bottom: 8px;
                 }
                 span{
@@ -59,6 +61,8 @@
         .feedback__send{
             border: none;
             padding: 45px 165px 50px;
+            @include adaptiveValue('padding-left', 165, 135, 768, 375);
+            @include adaptiveValue('padding-right', 165, 135, 768, 375);
             background-color: #fff;
             font-family: 'Proxima Nova Semibold';
             font-size: 20px;
@@ -72,6 +76,17 @@
 
             }
         }   
+        .budget__error{
+            color: red;
+            width: fit-content;
+            font-size: 15px;
+            display: block;
+            margin-left: 20%;
+            text-align: center;
+            margin-top: 15px;
+            opacity: 0;
+            transition: .3s;
+        }
         }
         .feedback__row_rc{
             width: 45%;
@@ -122,4 +137,40 @@
         border-bottom: none !important;
         margin-bottom: 0;
     }
+}
+
+@media(max-width: 900px){
+    .feedback{
+        .feedback__content{
+            flex-direction: column;
+            h1, p{
+                width: 100%;
+                text-align: center;
+                padding: 0;
+            }
+        }
+    }
+}
+@media(max-width: 768px){
+    .feedback__row{
+        flex-direction: column !important;
+        margin-bottom: 0px !important;
+        .feedback__row_lc, .feedback__row_rc{
+            width: 100% !important;
+            margin-bottom: 50px;
+            input{
+                width: 100%;
+            }
+        }
+        .budget__row{
+            order: 2;
+            text-align: center;
+            .feedback__block_budget{
+                justify-content: space-around;
+            }
+        }
+        .comment__row{
+            order: 1;
+        }
+    } 
 }

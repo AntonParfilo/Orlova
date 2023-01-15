@@ -4,11 +4,12 @@ footer{
     justify-content: space-between;
     min-height: 200px;
     .footer__lc{
-        width: 50%;
+        width: 80%;
         p{
             text-transform: uppercase;
         }
         .footer__links{
+            display: flex;
             margin-top: 20px;
             a{
                 margin-right: 42px;

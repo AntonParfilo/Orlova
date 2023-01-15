@@ -1,5 +1,6 @@
 .projects{
-    padding-top: 143px;
+    width: 100vw;
+    @include adaptiveValue('padding-top', 143, 30, 1000, 768);
     padding-bottom: 132px;
     display: flex;
     flex-direction: column;
@@ -12,7 +13,7 @@
         h1{
             width: 45%;
             text-transform: uppercase;
-            font-size: 65px;
+            @include adaptiveValue('font-size', 65, 30, 1920, 375);
             font-family: 'Proxima Nova Bold';
         }
         p{
@@ -28,6 +29,7 @@
         .slide{
             display: flex;
             flex-direction: column;
+            align-items: center;
             max-width: 706px;
             h3{
                 margin: 42px 0 21px 0;
@@ -37,6 +39,28 @@
             p{
                 color: #7E7E7E;
                 font-size: 20px;
+            }
+        }
+    }
+}
+@media(max-width: 769px){
+    .projects{
+        h1{
+            margin-bottom: 30px;
+        }
+    }
+    .projects__content{
+        flex-direction: column;
+        h1, p{
+            width: 100% !important;
+            text-align: center;
+            padding: 0 !important;
+        }
+    }
+    .carousel{
+        .slide{
+            img{
+                width: 90%;
             }
         }
     }

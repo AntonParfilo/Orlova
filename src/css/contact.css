@@ -1,6 +1,7 @@
 .contact {
-  display: flex;
+  display: flex !important;
   padding-top: 161px;
+  box-sizing: border-box;
 }
 .contact .contact__lc {
   width: 50%;

@@ -5,12 +5,13 @@ footer {
   min-height: 200px;
 }
 footer .footer__lc {
-  width: 50%;
+  width: 80%;
 }
 footer .footer__lc p {
   text-transform: uppercase;
 }
 footer .footer__lc .footer__links {
+  display: flex;
   margin-top: 20px;
 }
 footer .footer__lc .footer__links a {

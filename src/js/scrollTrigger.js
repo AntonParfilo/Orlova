@@ -1,5 +1,8 @@
 $(document).ready(()=>{
     gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.config({
+        autoRefreshEvents: "visibilitychange,DOMContentLoaded,load"
+      });
 
     const sections = $('.slide-sections__item');
     for(let i=0; i<sections.length; i++){
@@ -9,7 +12,7 @@ $(document).ready(()=>{
                 scrollTrigger: {
                 trigger: sections[i],
                 start: 'bottom bottom',
-                pin: false,
+                pin: true,
                 pinSpacing: false,
                 scrub: 1
                 }
@@ -21,7 +24,7 @@ $(document).ready(()=>{
                 scrollTrigger: {
                 trigger: sections[i],
                 start: 'top top',
-                pin: false,
+                pin: true,
                 pinSpacing: false,
                 scrub: 1
                 }
