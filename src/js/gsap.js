@@ -9,7 +9,7 @@ $(document).ready(()=>{
                 scrollTrigger: {
                 trigger: sections[i],
                 start: 'bottom bottom',
-                pin: true,
+                pin: false,
                 pinSpacing: false,
                 scrub: 1
                 }
@@ -21,7 +21,7 @@ $(document).ready(()=>{
                 scrollTrigger: {
                 trigger: sections[i],
                 start: 'top top',
-                pin: true,
+                pin: false,
                 pinSpacing: false,
                 scrub: 1
                 }
