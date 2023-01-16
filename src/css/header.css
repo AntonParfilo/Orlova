@@ -83,11 +83,11 @@
   }
 }
 .header__topText .header__menu_links {
-  transition: 0.4s;
   background-color: #000;
   margin-right: -3px;
   display: flex;
   transform: translateY(20%);
+  transition: 0.4s;
 }
 @supports (margin-right: clamp( 0.0000000625rem , -6.2203945724rem  +  16.0526313158vw , 3.8125rem )) {
   .header__topText .header__menu_links {

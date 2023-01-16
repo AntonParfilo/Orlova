@@ -24,7 +24,7 @@ $(document).ready(()=>{
             let el_rect = show_faces[i].getBoundingClientRect().top - window.innerHeight;
             setTimeout(()=>{
                 if(el_rect + show_distance < 0 && el_rect > window.innerHeight * -1 - el_height + show_distance){
-                    show_faces[i].classList.add("active-"+show_el[i].getAttribute("data-anim")); 
+                    show_faces[i].classList.add("active-"+show_faces[i].getAttribute("data-anim")); 
                 }
             }, i*200);
         };

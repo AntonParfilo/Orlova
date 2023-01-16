@@ -39,17 +39,16 @@
         transition: .1s;
         @include adaptiveValue("width", 265, 100, 1920, 320);
         @include adaptiveValue("margin-left", 140, 0, 1920, 320);
-        // margin-left: 120px;
         transform: translateY(200%);
     }
     .header__menu_links{
-        transition: .4s;
         background-color: #000;
         margin-right: -3px;
         display: flex;
         transform: translateY(20%);
         @include adaptiveValue("margin-right", 61, 0, 1000, 620);
         @include adaptiveValue('font-size', 20, 14, 1000, 320);
+        transition: .4s;
     }
 }
 .header{

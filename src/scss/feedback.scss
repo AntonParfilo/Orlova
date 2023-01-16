@@ -2,7 +2,6 @@
     border-bottom: 1px solid #fff;
     display: flex;
     flex-direction: column;
-    // padding-top: 165px;
     @include adaptiveValue('padding-top', 165, 30, 1920, 320);
     padding-bottom: 143px;
     header{
@@ -44,7 +43,6 @@
                 display: flex;
                 flex-direction: column;
                 p{
-                    // font-size: 30px;
                     @include adaptiveValue('font-size', 30, 20, 768, 375);
                     margin-bottom: 8px;
                 }

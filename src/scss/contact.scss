@@ -2,24 +2,22 @@
     display: flex !important;
     padding-top: 161px;
     box-sizing: border-box;
+    padding-bottom: 200px;
     .contact__lc{
         width: 50%;
         h1{
             text-transform: uppercase;
-            // font-size: 65px;
             @include adaptiveValue('font-size', 65, 22, 1920, 375);
             font-family: 'Proxima Nova Bold';
             margin-bottom: 209px;
         }
         h3{
-            // font-size: 30px;
             @include adaptiveValue('font-size', 30, 22, 1920, 375);
             text-transform: uppercase;
             font-family: 'Proxima Nova Semibold';
             text-decoration: underline;
         }
         p{
-            // font-size: 30px;
             @include adaptiveValue('font-size', 30, 22, 1920, 375);
             font-family: 'Proxima Nova Semibold';
             margin-top: 15px;
@@ -31,7 +29,6 @@
             margin-bottom: 82px;
         }
         h3{
-            // font-size: 40px;
             @include adaptiveValue('font-size', 40, 22, 1920, 375);
             margin: 13px 0 99px 0;
         }
