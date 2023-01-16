@@ -88,6 +88,7 @@
             animation-delay: 1.6s;
         }
         h2{
+            font-family: 'Marcellus Regular';
             @include adaptiveValue('font-size', 30, 22, 1500, 450);
             margin-top: 46px;
             font-family: 'Marcellus Regular';

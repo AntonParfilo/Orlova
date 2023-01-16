@@ -55,6 +55,7 @@ body{
             transform: translateY(100%);
         }
         .section__number{
+            font-family: 'Merriweather';
             position: absolute;
             @include adaptiveValue('top', 75, 20, 768, 500);
             @include adaptiveValue('left', 68, 20, 768, 500);

@@ -16,6 +16,7 @@
 .collapse{
     position: relative;
     h1{
+        font-family: 'Marcellus Regular';
         @include adaptiveValue('font-size', 40, 22, 1000, 500);
         color: #A0A0A0;
         cursor: pointer;

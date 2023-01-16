@@ -189,6 +189,7 @@
   }
 }
 .header .header__text h2 {
+  font-family: "Marcellus Regular";
   margin-top: 46px;
   font-family: "Marcellus Regular";
   transform: translateY(200%);
@@ -295,37 +296,37 @@
 }
 @font-face {
   font-family: "Proxima Nova Regular";
-  src: local("Proxima Nova Regular"), local("Proxima-Nova-Regular"), url("/src/fonts/ProximaNova-Regular/ProximaNova-Regular.woff2") format("woff2"), url("/src/fonts/ProximaNova-Regular/ProximaNova-Regular.woff") format("woff"), url("/src/fonts/ProximaNova-Regular/ProximaNova-Regular.ttf") format("truetype");
+  src: local("Proxima Nova Regular"), local("Proxima-Nova-Regular"), url("../fonts/ProximaNova-Regular/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular/ProximaNova-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Proxima Nova Semibold";
-  src: local("Proxima Nova Semibold"), local("Proxima-Nova-Semibold"), url("/src/fonts/ProximaNova-Semibold/ProximaNova-Semibold.woff2") format("woff2"), url("/src/fonts/ProximaNova-Semibold/ProximaNova-Semibold.woff") format("woff"), url("/src/fonts/ProximaNova-Semibold/ProximaNova-Semibold.ttf") format("truetype");
+  src: local("Proxima Nova Semibold"), local("Proxima-Nova-Semibold"), url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.woff2") format("woff2"), url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "Proxima Nova Bold";
-  src: local("Proxima Nova Bold"), local("Proxima-Nova-Bold"), url("/src/fonts/ProximaNova-Bold/ProximaNova-Bold.woff2") format("woff2"), url("/src/fonts/ProximaNova-Bold/ProximaNova-Bold.woff") format("woff"), url("/src/fonts/ProximaNova-Bold/ProximaNova-Bold.ttf") format("truetype");
+  src: local("Proxima Nova Bold"), local("Proxima-Nova-Bold"), url("../fonts/ProximaNova-Bold/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova-Bold/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold/ProximaNova-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Misto Book";
-  src: local("Misto Book"), local("Misto-Book"), url("/src/fonts/Misto-Book/Misto-Book.woff2") format("woff2"), url("/src/fonts/Misto-Book/Misto-Book.woff") format("woff"), url("/src/fonts/Misto-Book/Misto-Book.ttf") format("truetype");
+  src: local("Misto Book"), local("Misto-Book"), url("../fonts/Misto-Book/Misto-Book.woff2") format("woff2"), url("../fonts/Misto-Book/Misto-Book.woff") format("woff"), url("../fonts/Misto-Book/Misto-Book.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Marcellus Regular";
-  src: local("Marcellus Regular"), local("Marcellus-Regular"), url("/src/fonts/Marcellus-Regular/Marcellus-Regular.woff2") format("woff2"), url("/src/fonts/Marcellus-Regular/Marcellus-Regular.woff") format("woff"), url("/src/fonts/Marcellus-Regular/Marcellus-Regular.ttf") format("truetype");
+  src: local("Marcellus Regular"), local("Marcellus-Regular"), url("../fonts/Marcellus-Regular/Marcellus-Regular.woff2") format("woff2"), url("../fonts/Marcellus-Regular/Marcellus-Regular.woff") format("woff"), url("../fonts/Marcellus-Regular/Marcellus-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Merriweather";
-  src: local("Merriweather Black Italic"), local("Merriweather-Black-Italic"), url("/src/fonts/Merriweather-BlackItalic/Merriweather-BlackItalic.woff2") format("woff2"), url("/src/fonts/Merriweather-BlackItalic/Merriweather-BlackItalic.woff") format("woff"), url("/src/fonts/Merriweather-BlackItalic/Merriweather-BlackItalic.ttf") format("truetype");
+  src: local("Merriweather Black Italic"), local("Merriweather-Black-Italic"), url("../fonts/Merriweather-BlackItalic/Merriweather-BlackItalic.woff2") format("woff2"), url("../fonts/Merriweather-BlackItalic/Merriweather-BlackItalic.woff") format("woff"), url("../fonts/Merriweather-BlackItalic/Merriweather-BlackItalic.ttf") format("truetype");
   font-weight: 900;
   font-style: italic;
 }
@@ -351,6 +352,7 @@
   position: relative;
 }
 .collapse h1 {
+  font-family: "Marcellus Regular";
   color: #A0A0A0;
   cursor: pointer;
 }
@@ -530,6 +532,7 @@
   align-items: flex-start;
 }
 .about .about__faces .face .face__text h3 {
+  font-family: "Marcellus Regular";
   margin-bottom: 20px;
   text-transform: uppercase;
   transform: translateY(300%);
@@ -684,6 +687,7 @@
   font-size: 30px;
 }
 .projects .carousel .slide p {
+  font-family: "Marcellus Regular";
   color: #7E7E7E;
   font-size: 20px;
 }
@@ -1095,6 +1099,7 @@ input[type=range].styled-slider.slider-progress::-ms-fill-lower {
   margin-bottom: 82px;
 }
 .contact .contact__rc h3 {
+  font-family: "Marcellus Regular";
   margin: 13px 0 99px 0;
 }
 @supports (font-size: clamp( 1.375rem , 1.1019417476rem  +  1.1650485437vw , 2.5rem )) {
@@ -1444,6 +1449,7 @@ body .section p {
   }
 }
 body .section .section__number {
+  font-family: "Merriweather";
   position: absolute;
   font-family: "Merriweather";
   color: #707070;
